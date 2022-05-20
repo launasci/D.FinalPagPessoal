@@ -1,0 +1,80 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;
+  font-size: 1.2rem;
+  margin-top: 3%;
+}
+
+nav > button {
+  border: 0;
+  background-color: aqua;
+}
+
+nav > button:hover {
+  border-bottom: 2px solid rgb(200, 14, 45);
+}
+
+.nome {
+  font-size: 1.8rem;
+  margin-top: 3%;
+}
+
+header > p {
+}
+
+.foto-bio {
+  display: flex;
+  margin-top: 3%;
+}
+
+.foto-bio > img {
+  width: 40%;
+  height: 40%;
+  float: left;
+  border-radius: 50%;
+}
+.foto-bio > .bio {
+}
+
+.portfolio {
+  display: flex;
+  width: 90%;
+  background-color: coral;
+  margin-left: 5%;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+.portfolio > p {
+}
+
+.portfolio > img {
+  width: 20%;
+  height: 20%;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contato > li {
+  list-style: none;
+}
