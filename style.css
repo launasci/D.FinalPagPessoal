@@ -5,17 +5,19 @@
 
 html,
 body {
-  background-image: url(https://i.pinimg.com/564x/a8/2f/15/a82f15a713dfce6a3402332d953e3b9b.jpg);
-  background-size: 135vh;
+  /* background-image: url(); */
+  background-color: #2c514c;
+  background-size: 200vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .fundo {
-  background-color: #a9a5c8;
+  background-color: #89937c;
   width: 85%;
-  height: 150vh;
+  height: 220vh;
   margin-left: 8%;
+  border-radius: 10px;
 }
 
 .info {
@@ -26,8 +28,8 @@ body {
 
 .info > .nome {
   font-size: 1.3rem;
-  margin-bottom: 0.5%;
-  margin-top: 3%;
+  margin-bottom: 1.5%;
+  padding-top: 3%;
 }
 
 .info > .funcao {
@@ -35,28 +37,28 @@ body {
 }
 
 .borda {
-  border: 4px solid gray;
+  border: 4px solid #8e443d;
+  width: 50%;
+  margin-left: 25%;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
-  margin-top: 6%;
+  margin-top: 4%;
   margin-bottom: 3%;
-  border-top: ;
 }
 
-nav > button {
+nav > a > button {
   font-size: 1rem;
   border: none;
   border-bottom: 3px solid transparent;
+  background-color: #89937c;
 }
 
 button:hover {
-  border-bottom: 3px solid salmon;
-}
-
-.bio-foto {
+  border-bottom: 3px solid #5d2e46;
+  color: #ad6a6c;
 }
 
 .bio-foto > img {
@@ -77,16 +79,15 @@ button:hover {
   text-align: justify;
   margin-right: 3%;
   margin-left: 3%;
-  margin-top: 10%;
   line-height: 1.5rem;
 }
 
-.projetos > h3 {
+#projetos > h3 {
   text-align: center;
   margin-top: 3%;
   margin-bottom: 5%;
-  border-top: 3px solid salmon;
-  border-bottom: 3px solid salmon;
+  border-top: 3px solid #8e443d;
+  border-bottom: 3px solid #8e443d;
   width: 30%;
   margin-left: 35%;
 }
@@ -103,20 +104,85 @@ li {
   list-style: none;
 }
 
-.bloco_um > p {
+.bloco_dois > p {
   font-size: 0.8rem;
   text-align: justify;
   margin-right: 3%;
-  background-color: burlywood;
+  color: #89937c;
 }
 
 li > a > img {
   border: 3px solid transparent;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
   width: 80%;
-  height: 80%;
+  filter: none;
 }
 
 li > a > img:hover {
-  border: 3px solid salmon;
+  border: 3px solid #8e443d;
+  filter: grayscale(1);
+}
+
+.bloco_dois > li > a > img {
+  margin-left: 10%;
+}
+
+#hobbies {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.linha-tempo {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.linha > h4 {
+  text-align: right;
+  margin-bottom: 3%;
+  margin-left: 45%;
+  margin-right: 3%;
+  border-bottom: 3px solid #8e443d;
+  width: 50%;
+  font-weight: 600;
+}
+
+.linha > .coluna {
+  display: flex;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  text-align: justify;
+}
+
+.linha > .coluna:hover {
+  background-color: #acc3a6;
+  border-radius: 2px;
+}
+
+#cont {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-bottom: 3px solid #8e443d;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.contato > a > img {
+  width: 30%;
+  height: 80%;
+  margin-top: 2%;
+  margin-left: 32%;
+}
+
+.contato > a > img:hover {
+  animation: slide-top 0.1s linear both;
+  transform: translateY(0);
+  transform: translateY(-30px);
 }
