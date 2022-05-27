@@ -1,80 +1,122 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  height: 100%;
+  background-image: url(https://i.pinimg.com/564x/a8/2f/15/a82f15a713dfce6a3402332d953e3b9b.jpg);
+  background-size: 135vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-header {
-  background-color: bisque;
-  display: flex;
-  flex-direction: column;
+.fundo {
+  background-color: #a9a5c8;
+  width: 85%;
+  height: 150vh;
+  margin-left: 8%;
+}
+
+.info {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.info > .nome {
+  font-size: 1.3rem;
+  margin-bottom: 0.5%;
+  margin-top: 3%;
+}
+
+.info > .funcao {
+  font-size: 1.1rem;
+}
+
+.borda {
+  border: 4px solid gray;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: aqua;
-  font-size: 1.2rem;
-  margin-top: 3%;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  border-top: ;
 }
 
 nav > button {
-  border: 0;
-  background-color: aqua;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 3px solid transparent;
 }
 
-nav > button:hover {
-  border-bottom: 2px solid rgb(200, 14, 45);
+button:hover {
+  border-bottom: 3px solid salmon;
 }
 
-.nome {
-  font-size: 1.8rem;
-  margin-top: 3%;
+.bio-foto {
 }
 
-header > p {
-}
-
-.foto-bio {
-  display: flex;
-  margin-top: 3%;
-}
-
-.foto-bio > img {
-  width: 40%;
-  height: 40%;
+.bio-foto > img {
+  width: 51%;
+  height: 51%;
+  border-radius: 10%;
   float: left;
-  border-radius: 50%;
-}
-.foto-bio > .bio {
+  margin: 3% 3% 0.5% 3%;
 }
 
-.portfolio {
+.bio-foto > h3 {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  background-color: bisque;
+}
+
+.bio-foto > p {
+  text-align: justify;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top: 10%;
+  line-height: 1.5rem;
+}
+
+.projetos > h3 {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  border-top: 3px solid salmon;
+  border-bottom: 3px solid salmon;
+  width: 30%;
+  margin-left: 35%;
+}
+.bloco_um,
+.bloco_dois {
   display: flex;
-  width: 90%;
-  background-color: coral;
-  margin-left: 5%;
   align-items: center;
-  justify-content: space-around;
-  margin-right: 5%;
-}
-.portfolio > p {
-}
-
-.portfolio > img {
-  width: 20%;
-  height: 20%;
+  flex-direction: row-reverse;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.contato {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contato > li {
+li {
   list-style: none;
+}
+
+.bloco_um > p {
+  font-size: 0.8rem;
+  text-align: justify;
+  margin-right: 3%;
+  background-color: burlywood;
+}
+
+li > a > img {
+  border: 3px solid transparent;
+  margin-bottom: 5%;
+  width: 80%;
+  height: 80%;
+}
+
+li > a > img:hover {
+  border: 3px solid salmon;
 }
